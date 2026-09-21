@@ -1,0 +1,32 @@
+{
+  "name": "sol-exact-quote",
+  "version": "0.1.0",
+  "description": "Exact offline swap quotes for seven Solana DEX venues, validated against on-chain simulation: Meteora DLMM, Meteora DAMM v2, Raydium CLMM, Raydium CP, Raydium v4, Orca Whirlpool and PumpSwap.",
+  "license": "Apache-2.0",
+  "author": "Fahad Ullah",
+  "type": "module",
+  "main": "lib/index.mjs",
+  "exports": {
+    ".": "./lib/index.mjs",
+    "./build": "./lib/build.mjs"
+  },
+  "files": ["lib", "dist", "ts", "README.md", "LICENSE", "NOTICE"],
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --test test/quote.test.mjs",
+    "verify": "node tools/verify.mjs",
+    "prepare": "npm run build"
+  },
+  "keywords": ["solana", "dex", "amm", "clmm", "dlmm", "raydium", "orca", "whirlpool", "meteora", "pumpswap", "quote", "swap"],
+  "dependencies": {
+    "@meteora-ag/cp-amm-sdk": "1.4.8",
+    "@pump-fun/pump-swap-sdk": "1.19.0",
+    "@solana/web3.js": "1.98.4",
+    "bn.js": "5.2.5"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.1",
+    "typescript": "5.9.3"
+  }
+}

@@ -1,0 +1,23 @@
+sol-exact-quote
+Copyright 2026 Fahad Ullah
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+The pricing math reproduces the on-chain behaviour of the following programs.
+Account layouts, fee formulas and rounding rules were read from their public
+source code and confirmed against mainnet simulation. Their authors are
+credited here; check each repository for its current license terms.
+
+  Raydium CLMM      https://github.com/raydium-io/raydium-clmm
+  Raydium CP Swap   https://github.com/raydium-io/raydium-cp-swap
+  Raydium AMM (v4)  https://github.com/raydium-io/raydium-amm
+  Orca Whirlpools   https://github.com/orca-so/whirlpools
+  Meteora DLMM      https://github.com/MeteoraAg/dlmm-sdk
+  Meteora DAMM v2   https://github.com/MeteoraAg/damm-v2-sdk
+
+Runtime dependencies (installed by npm, not redistributed here):
+
+  @solana/web3.js            MIT
+  @pump-fun/pump-swap-sdk    MIT          PumpSwap quote math and instructions
+  @meteora-ag/cp-amm-sdk     (see package) DAMM v2 quote math and instructions
+  bn.js                      MIT
