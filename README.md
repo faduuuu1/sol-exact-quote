@@ -37,7 +37,7 @@ A quote that leaves out a fee component doesn't fail loudly. It overstates the o
 Not on npm yet. Build from source:
 
 ```bash
-git clone https://github.com/givemebot/sol-exact-quote.git && cd sol-exact-quote && npm install && npm test
+git clone https://github.com/faduuuu1/sol-exact-quote.git && cd sol-exact-quote && npm install && npm test
 ```
 
 Node 20 or newer. `npm install` compiles the CLMM math (TypeScript) into `dist/`.
