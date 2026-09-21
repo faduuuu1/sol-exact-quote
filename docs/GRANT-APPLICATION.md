@@ -1,9 +1,10 @@
 # Grant application draft: sol-exact-quote
 
 > **For the applicant.** This is a draft to adapt to each program's form. It was written from the repository's own measurements.
-> Fill in every `[bracketed]` field yourself; the budget and rate are yours to set.
+> The budget is a suggested starting point: about 640 hours at $35/hour, itemised below. You can change it.
+> Your contact email goes in each application form, not in this public file.
 > - Solana Foundation: apply at solana.org/grants-funding. Grants are milestone-based and require open source.
-> - Superteam Instagrants: through Superteam Earn, via your regional Superteam.
+> - Superteam Instagrants: through Superteam Earn, via Superteam Pakistan (apply here first).
 > - Orca's Whirlpools Builders Program, if a round is open.
 
 ---
@@ -13,7 +14,7 @@
 **Name:** sol-exact-quote
 **Repository:** https://github.com/faduuuu1/sol-exact-quote
 **License:** Apache-2.0. The library holds no funds, deploys no program, and has no token.
-**Applicant:** Fahad Ullah · @faduuuu1 · [contact email] · [country]
+**Applicant:** Fahad Ullah · @faduuuu1 · contact email in the application form · Pakistan
 
 **One line:** an open-source library that returns the exact output of a swap on seven Solana DEX venues from raw account
 bytes, verified against mainnet simulation, and refuses rather than approximates.
@@ -79,13 +80,22 @@ split routed on it underdelivers, and a displayed price impact is too small.
 
 | # | Deliverable | Acceptance criteria | Duration | Budget |
 |---|---|---|---|---|
-| M1 | **Rust crate** with the same seven venues | Every fixture in the corpus replays to the same integer in Rust as in JS, with the same refusal reason. Published on crates.io with docs. | [6 weeks] | [$] |
-| M2 | **Fixture corpus + CI** | At least 500 mainnet-recorded fixtures across all venues and both directions. GitHub Actions replays them offline on every commit, for JS and Rust. | [3 weeks] | [$] |
-| M3 | **Upgrade watch** | A scheduled job re-verifies a pool set against mainnet each week and opens an issue on any mismatch, which catches program upgrades and layout changes. A public status page shows the latest run. | [2 weeks] | [$] |
-| M4 | **Two more venues** | Chosen by volume share with the grant committee. Each meets the same bar: exact on unchanged state in `verify.mjs`, with fixtures in CI. | [4 weeks] | [$] |
-| M5 | **Maintenance, 12 months** | Mismatches from M3 fixed within [7] days of detection. Releases tagged. Issues answered. | [12 months] | [$] |
+| M1 | **Rust crate** with the same seven venues | Every fixture in the corpus replays to the same integer in Rust as in JS, with the same refusal reason. Published on crates.io with docs. | 6 weeks (240 h) | $8,400 |
+| M2 | **Fixture corpus + CI** | At least 500 mainnet-recorded fixtures across all venues and both directions. GitHub Actions replays them offline on every commit, for JS and Rust. | 3 weeks (100 h) | $3,500 |
+| M3 | **Upgrade watch** | A scheduled job re-verifies a pool set against mainnet each week and opens an issue on any mismatch, which catches program upgrades and layout changes. A public status page shows the latest run. | 2 weeks (60 h) | $2,100 |
+| M4 | **Two more venues** | Chosen by volume share with the grant committee. Each meets the same bar: exact on unchanged state in `verify.mjs`, with fixtures in CI. | 4 weeks (140 h) | $4,900 |
+| M5 | **Maintenance, 12 months** | Mismatches from M3 fixed within 7 days of detection. Releases tagged. Issues answered. | 12 months (~8 h/month, 100 h) | $3,500 |
+| | **Total** | | ~15 weeks of build + 12 months of upkeep (640 h) | **$22,400** |
 
 Payment requested per milestone, on delivery against its acceptance criteria.
+
+**How the budget was set.** Each milestone was estimated in hours from the work already done: the seven JS pricers and
+the verification tool exist, and a Rust port of two venues is under way. All hours are costed at one rate, $35/hour.
+The total is below the reported average of roughly $40,000 for Solana open-source public-good grants.
+
+**Split across programs, so no work is funded twice.** If Superteam Pakistan funds M2 and M3 as an Instagrant
+($5,600), the Solana Foundation request drops to M1, M4 and M5 ($16,800). Each application will state which
+milestones the other program already covers.
 
 ## Why this team
 
