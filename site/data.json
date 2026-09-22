@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-22T01:11:26.734Z",
-  "scanned": 23,
-  "priced": 21,
-  "withHidden": 3,
+  "generatedAt": "2026-09-22T01:27:03.289Z",
+  "scanned": 112,
+  "priced": 106,
+  "withHidden": 4,
   "rows": [
     {
       "pool": "nEnhtdXrHocxDQnmfTWgaLodJP8jxFbY6958iv28GzV",
@@ -13,44 +13,28 @@
       "hasHidden": true
     },
     {
-      "pool": "GhVFgbipdBgPK3DepE2P5H88dQN6EY8NYppWkg43rHbi",
-      "venue": "Whirlpool",
-      "pair": "SOL / Ai66…",
-      "hiddenKind": "adaptive fee",
-      "hiddenBps": 18.57,
-      "hasHidden": true
-    },
-    {
       "pool": "tqeNC7ANhBfJWqyLQjoFvJXrEHiknGyr5tBGV4aSs6C",
       "venue": "Raydium CLMM",
       "pair": "SOL / 6GmA…",
       "hiddenKind": "dynamic fee",
-      "hiddenBps": 0.15,
+      "hiddenBps": 12.3,
       "hasHidden": true
     },
     {
-      "pool": "8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj",
-      "venue": "Raydium CLMM",
+      "pool": "GcxNEzvGsn3sJ753Ak6mcca43GsjLmNvFHYQva2bsf4k",
+      "venue": "Raydium CP",
+      "pair": "SOL / 7nZu…",
+      "hiddenKind": "creator fee",
+      "hiddenBps": 5.01,
+      "hasHidden": true
+    },
+    {
+      "pool": "4HppGTweoGQ8ZZ6UcCgwJKfi5mJD9Dqwy6htCpnbfBLW",
+      "venue": "Whirlpool",
       "pair": "SOL / USDC",
-      "hiddenKind": "none",
-      "hiddenBps": 0,
-      "hasHidden": false
-    },
-    {
-      "pool": "EZVkeboWeXygtq8LMyENHyXdF5wpYrtExRNH9UwB1qYw",
-      "venue": "Raydium CLMM",
-      "pair": "JUPy… / SOL",
-      "hiddenKind": "none",
-      "hiddenBps": 0,
-      "hasHidden": false
-    },
-    {
-      "pool": "GtKKKs3yaPdHbQd2aZS4SfWhy8zQ988BJGnKNndLxYsN",
-      "venue": "Raydium CLMM",
-      "pair": "SOL / DezX…",
-      "hiddenKind": "none",
-      "hiddenBps": 0,
-      "hasHidden": false
+      "hiddenKind": "adaptive fee",
+      "hiddenBps": 0.37,
+      "hasHidden": true
     },
     {
       "pool": "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE",
@@ -77,17 +61,97 @@
       "hasHidden": false
     },
     {
-      "pool": "75fyBU93H5z5S5nec5huFhHYCtEGHkD9JBT8SYmBLyoQ",
-      "venue": "Raydium CP",
+      "pool": "C1MgLojNLWBKADvu9BHdtgzz1oZX4dZ5zGdGcgvvW8Wz",
+      "venue": "Whirlpool",
+      "pair": "JUPy… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "83v8iPyZihDEjDdY8RdZddyZNyUtXngz69Lgo9Kt5d6d",
+      "venue": "Whirlpool",
+      "pair": "SOL / USDC",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "7qbRF6YsyGuLUVs6Y1q64bdVrfe4ZcUUz1JRdoVNUJnm",
+      "venue": "Whirlpool",
+      "pair": "SOL / USDC",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "FpCMFDFGYotvufJ7HrFHsWEiiQCGbkLCtwHiDnh7o28Q",
+      "venue": "Whirlpool",
+      "pair": "SOL / USDC",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "7BZzoP3QB2zK3R7WqRzjS5fpeeErgdy3HGzxXrN97aEY",
+      "venue": "Whirlpool",
       "pair": "SOL / WENW…",
       "hiddenKind": "none",
       "hiddenBps": 0,
       "hasHidden": false
     },
     {
-      "pool": "G8kgi7aUpeX8EVR8VMkrth9SKEv5BietWC33UjAiiMGh",
-      "venue": "Raydium CP",
-      "pair": "SOL / ApZu…",
+      "pool": "HLZhDXoCKDmDjhFubaEa5um3dMcbEFDs847EixYgbUM5",
+      "venue": "Whirlpool",
+      "pair": "SOL / WENW…",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "4Ui9QdDNuUaAGqCPcDSp191QrixLzQiLxJ1Gnqvz3szP",
+      "venue": "Whirlpool",
+      "pair": "JUPy… / USDC",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "F7ocu8fhsoV7CHsEGRHmSKXNDdt7f1xXUEDc7KmZ3hi3",
+      "venue": "Whirlpool",
+      "pair": "SOL / WENW…",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "5zpyutJu9ee6jFymDGoK7F6S5Kczqtc9FomP3ueKuyA9",
+      "venue": "Whirlpool",
+      "pair": "SOL / DezX…",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "AU971DrPyhhrpRnmEBp5pDTWL2ny7nofb5vYBjDJkR2E",
+      "venue": "Whirlpool",
+      "pair": "7vfC… / USDC",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "FwewVm8u6tFPGewAyHmWAqad9hmF7mvqxK4mJ7iNqqGC",
+      "venue": "Whirlpool",
+      "pair": "SOL / USDT",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "5gwmcjXMy6jmWHAXS4rTcPSRbgkm92RnyYBRtMQJsREw",
+      "venue": "Whirlpool",
+      "pair": "SOL / J3NK…",
       "hiddenKind": "none",
       "hiddenBps": 0,
       "hasHidden": false
@@ -109,9 +173,105 @@
       "hasHidden": false
     },
     {
-      "pool": "2f5QQnNBATNsE7mAW94dpxXeeBcihseJbawQ2KXen3rQ",
+      "pool": "oy9ymnwyE8aup5UR2os4wytCRbxjzAFwRWkrj5V2kJ3",
       "venue": "Meteora DLMM",
-      "pair": "PerP… / SOL",
+      "pair": "SV15… / USDC",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "C8Gr6AUuq9hEdSYJzoEpNcdjpojPZwqG5MtQbeouNNwg",
+      "venue": "Meteora DLMM",
+      "pair": "JUPy… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "EYRZ7TiMxfaergZb5j9UQga3dXAtGbiaeWrWDMKrNUVm",
+      "venue": "Meteora DLMM",
+      "pair": "SOL / USDC",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "3vzCDcWV1gWExDYtd2YGtoAD1wvMNv9ceiGzFs7ZrnpM",
+      "venue": "Meteora DLMM",
+      "pair": "zj1j… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "sZxb9vrxJBpFiJBogovhfkYqfapVzveLEU4TmzWv4GN",
+      "venue": "Meteora DLMM",
+      "pair": "SOL / USDC",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "AZKc1vHE56X547m4oAa8g4zLT9QbRowkV74EiT1NiUuF",
+      "venue": "Meteora DLMM",
+      "pair": "purp… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "A6u8tWDtSNuEyZSZufoP9TGQvuEREKnpGcNP7xUsYMKq",
+      "venue": "Meteora DLMM",
+      "pair": "WENW… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "HfgjZDmexhFVD28Vkb1NbQwWeXP3uDcVTLPjSGHmRHhL",
+      "venue": "Meteora DLMM",
+      "pair": "JUPy… / USDC",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "6vHCZP6Nytp2pn4P9VkK8hFZCecaojvx4vUqNRWQ8YLw",
+      "venue": "Meteora DLMM",
+      "pair": "WENW… / USDC",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "Dvr7yVzpsjxoRpAjH7f1zt8C3oYxDKuwQmePMgT6Xcik",
+      "venue": "Meteora DLMM",
+      "pair": "SOL / USDC",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "HRYEjwdo3bZ1TpXKWKcezqiwSV2Ywuh4LxMa2PzoCnG6",
+      "venue": "Meteora DLMM",
+      "pair": "USDC / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "CK3ztgZaUs6dpJa5S1ku7fAiEhdrq1BBib4kDUV8hJnS",
+      "venue": "Meteora DLMM",
+      "pair": "ApZu… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "5XRqv7LCoC5FhWKk5JN8n4kCrJs3e4KH1XsYzKeMd5Nt",
+      "venue": "Meteora DLMM",
+      "pair": "SOL / USDC",
       "hiddenKind": "none",
       "hiddenBps": 0,
       "hasHidden": false
@@ -141,9 +301,217 @@
       "hasHidden": false
     },
     {
+      "pool": "zgLSYJkWC8yU9JvjFRXMD7MjzqY7SebmSAa3REsqaBF",
+      "venue": "Meteora DAMM v2",
+      "pair": "purp… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "rfXWDrrjs9MNKTk9CR7Qw6CqgC4gKqVVWkeg9sQFwqE",
+      "venue": "Meteora DAMM v2",
+      "pair": "WENW… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "GqbkAy1ajZivdjk8jhDdMqapzN6ogEfD12LtJYyXQC4C",
+      "venue": "Meteora DAMM v2",
+      "pair": "G5W6… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "AehDkxVKERzq4A8M5EXLkctj4QFPNyJBwUBphkQsrdVW",
+      "venue": "Meteora DAMM v2",
+      "pair": "H74C… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "7mrsXGxptQAXTi9TMKmNw9eisSu8hpTm4ithpQF8wPZ7",
+      "venue": "Meteora DAMM v2",
+      "pair": "H74C… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "Ehy8B2iL229569XxQFQ915nWVE1vom76dLNQVQimaH9P",
+      "venue": "Meteora DAMM v2",
+      "pair": "4UeL… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "4Q7W1RudaEbE1NDeZ4JBg7QFqDrbLwmVA2TejnWBHXuc",
+      "venue": "Meteora DAMM v2",
+      "pair": "7nZu… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "83SHmcVgV37h7Fpj8Nya3bhZXCPtW6XWVBheqLc7j2gg",
+      "venue": "Meteora DAMM v2",
+      "pair": "MukL… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "4GCWn3GLFJ6JMHdbG9Wz9LQXyrA9JL44fUJCBaozB7Ki",
+      "venue": "Meteora DAMM v2",
+      "pair": "SOL / 9Avy…",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "HfBVFhCksbts69m5hvPi8zqgiMsibvYZf6cPvapUtnuu",
+      "venue": "Meteora DAMM v2",
+      "pair": "9Avy… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "CGPxT5d1uf9a8cKVJuZaJAU76t2EfLGbTmRbfvLLZp5j",
+      "venue": "Meteora DAMM v2",
+      "pair": "SOL / USDC",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
       "pool": "91axdGmMoqQQg2MPUXKxT3bdqX4p2RMLXqZSQgXn2JpM",
       "venue": "Raydium v4",
       "pair": "hnty… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "58oQChx4yWmvKdwLLZzBi4ChoCc2fqCUWBkwMihLYQo2",
+      "venue": "Raydium v4",
+      "pair": "SOL / USDC",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "HrPMN9xR3csgXNEZFZBU2SZagDUDzNH8JwVSDcZvvYHA",
+      "venue": "Raydium v4",
+      "pair": "WENW… / USDC",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "5WGx6mE9Xww3ocYzSenGVQMJLCVVwK7ePnYV6cXcpJtK",
+      "venue": "Raydium v4",
+      "pair": "WENW… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "EYErUp5muPYEEkeaUCY22JibeZX7E9UuMcJFZkmNAN7c",
+      "venue": "Raydium v4",
+      "pair": "JUPy… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "6qJqDaYUMHkda55jP8h48FV2r7ejMFfudCFmY6z9a6uh",
+      "venue": "Raydium v4",
+      "pair": "SOL / x95H…",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "7XawhbbxtsRcQA8KTkHT9f9nc6d69UwqCDh6U5EEbEmX",
+      "venue": "Raydium v4",
+      "pair": "SOL / USDT",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "EP2ib6dYdEeqD8MfE2ezHCxX3kP3K2eLKkirfPm5eyMx",
+      "venue": "Raydium v4",
+      "pair": "EKpQ… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "61acRgpURKTU8LKPJKs6WQa18KzD9ogavXzjxfD84KLu",
+      "venue": "Raydium v4",
+      "pair": "SOL / USDC",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "H4nhs3HUWKTEvpmg3z4ntsUtaASQduYXNQfrSSQTuKCS",
+      "venue": "Raydium v4",
+      "pair": "SOL / SKRb…",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "Bzc9NZfMqkXR6fz1DBph7BDf9BroyEf6pnzESP7v5iiw",
+      "venue": "Raydium v4",
+      "pair": "SOL / 9BB6…",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "HVNwzt7Pxfu76KHCMQPTLuTCLTm6WnQ1esLv4eizseSv",
+      "venue": "Raydium v4",
+      "pair": "DezX… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "9t1H1uDJ558iMPNkEPSN1fqkpC4XSPQ6cqSf6uEsTfTR",
+      "venue": "Raydium v4",
+      "pair": "J3NK… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "AVs9TA4nWDzfPJE9gGVNJMVhcQy3V9PGazuz33BfG2RA",
+      "venue": "Raydium v4",
+      "pair": "4k3D… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "5DDWa8LCgZgJLF723W5XQhpz4YiShAP1YdvRwQ8mKcqN",
+      "venue": "Raydium v4",
+      "pair": "SOL / GwKK…",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "9ViX1VductEoC2wERTSp2TuDxXPwAf69aeET8ENPJpsN",
+      "venue": "Raydium v4",
+      "pair": "SOL / DtR4…",
       "hiddenKind": "none",
       "hiddenBps": 0,
       "hasHidden": false
@@ -168,6 +536,318 @@
       "pool": "CwqkkPwKcTXAr4xYw8FKykBYY6x6iaJKrjJdNShiQp8A",
       "venue": "Pump.fun Amm",
       "pair": "EpXt… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "41rzTMB7JHPTyMXzrYwdqnBecJRhkb8KHYAjrQ9cYxJx",
+      "venue": "Pump.fun Amm",
+      "pair": "CbyT… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "HH4D2z7SkBtoS2DAwzs1XCwSRWYbk14KNueU1KhmZcEV",
+      "venue": "Pump.fun Amm",
+      "pair": "69Lj… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "DA4pM4xSDY4M9V4CgAKKBVH1pw1yscTQQa5nEkGHuKpt",
+      "venue": "Pump.fun Amm",
+      "pair": "MukL… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "DMAFL613XTipuA3jFNYczavWT7XsiYf9cR3qmRMZQhB6",
+      "venue": "Pump.fun Amm",
+      "pair": "9Avy… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "CqC3Hz1VLgRtoy8Kcahif6vxAcYNyQVM7SWxLXCQAfcK",
+      "venue": "Pump.fun Amm",
+      "pair": "739d… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "HMzvsEEmtzHhvZNw9uwbaG85HCTmFnkbhzUx16cy7ca3",
+      "venue": "Pump.fun Amm",
+      "pair": "Ai66… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "3dcwhqJp6JBTJPq8ga335HWgSQVS7uQmdmeX7iGjMNpj",
+      "venue": "Pump.fun Amm",
+      "pair": "CTPo… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "AypFy111g9Nt1JvUNYmtJd9iS2m8C3PbVEosmX9ecHEu",
+      "venue": "Pump.fun Amm",
+      "pair": "8vGr… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "Fex8CSkNXfaxAPRqQARKGchYAMVfwDg28sfmBXXGkNGX",
+      "venue": "Pump.fun Amm",
+      "pair": "9Pfy… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "7bSVnqtU2CWSby3jXzwKnEYGZKZMv6JTZBDVATeoMo2J",
+      "venue": "Pump.fun Amm",
+      "pair": "EHpa… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "D6VVbDNcakyAvuGk8D4bjz9LHtQQugHdsx57fRTSsqNG",
+      "venue": "Pump.fun Amm",
+      "pair": "ANM3… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "D5ZQf8GFSDxDKo3t3gejCfnrTMttU16Dv2BHK3TNYatp",
+      "venue": "Pump.fun Amm",
+      "pair": "BRZ5… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "FnzKY6x7entQ1eR3D225dQyT7ybfka4PskBMQhb8L3CC",
+      "venue": "Pump.fun Amm",
+      "pair": "9cRC… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj",
+      "venue": "Raydium CLMM",
+      "pair": "SOL / USDC",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "EZVkeboWeXygtq8LMyENHyXdF5wpYrtExRNH9UwB1qYw",
+      "venue": "Raydium CLMM",
+      "pair": "JUPy… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "GtKKKs3yaPdHbQd2aZS4SfWhy8zQ988BJGnKNndLxYsN",
+      "venue": "Raydium CLMM",
+      "pair": "SOL / DezX…",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "CYbD9RaToYMtWKA7QZyoLahnHdWq553Vm62Lh6qWtuxq",
+      "venue": "Raydium CLMM",
+      "pair": "SOL / USDC",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "45ssPkUQs1ssbeDqxD2mZrMdJYAXF7GyQyhS5xDXuWC5",
+      "venue": "Raydium CLMM",
+      "pair": "SOL / pump…",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "3nMFwZXwY1s1M5s8vYAHqd4wGs4iSxXE4LRoUMMYqEgF",
+      "venue": "Raydium CLMM",
+      "pair": "SOL / USDT",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "7pEyz9tPwxYv2WF1fCBB83ChXuCjyusgTB89CXGPrMHh",
+      "venue": "Raydium CLMM",
+      "pair": "SOL / 98kf…",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "5cuhpA5Atjzxy5VcFNU6nAjJrASd9x1f8NoTbUHmNgDE",
+      "venue": "Raydium CLMM",
+      "pair": "SOL / CrAr…",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "3ucNos4NbumPLZNWztqGHNFFgkHeRMBQAVemeeomsUxv",
+      "venue": "Raydium CLMM",
+      "pair": "SOL / USDC",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "2QdhepnKRTLjjSqPL1PtKNwqrUkoLee5Gqs8bvZhRdMv",
+      "venue": "Raydium CLMM",
+      "pair": "SOL / USDC",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "3zozghHn3cCmbAVPF3Bm5AiyT7VorSdHwTt2qJjLfDo2",
+      "venue": "Raydium CLMM",
+      "pair": "SOL / Xsue…",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "5byS2sGSupT8Sb4z9VQNzwHCQm12XMcYrnM1oNeqAYgt",
+      "venue": "Raydium CLMM",
+      "pair": "SOL / Dz9m…",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "75fyBU93H5z5S5nec5huFhHYCtEGHkD9JBT8SYmBLyoQ",
+      "venue": "Raydium CP",
+      "pair": "SOL / WENW…",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "G8kgi7aUpeX8EVR8VMkrth9SKEv5BietWC33UjAiiMGh",
+      "venue": "Raydium CP",
+      "pair": "SOL / ApZu…",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "9b6tZyJhMrhntCe8kSCWNKroDhpf1P666VLJQf5YvQdQ",
+      "venue": "Raydium CP",
+      "pair": "USDC / FLWS…",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "4uHxR5TjJE1J1AT2RWLH2DeZn2CDwh75TWmophGcem4k",
+      "venue": "Raydium CP",
+      "pair": "SOL / A7bd…",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "EKPjNvowpSFPaZcroeUcgAPtdUTZZrP3v8sCKKyfpe5x",
+      "venue": "Raydium CP",
+      "pair": "SOL / 6GmA…",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "4MXybVn82rBxjvANiMpmvYUQejRzwkiTnjDT8NQmHMRe",
+      "venue": "Raydium CP",
+      "pair": "SOL / 4Meq…",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "fAjTnZ9QqJkUmrr8cXutkYhpVge2qqtSZNt9qKn7YC2",
+      "venue": "Raydium CP",
+      "pair": "SOL / USDC",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "HMcsLqREEer8Q7VuRTxrxaNnyDgJRYc77XJ9K3gcARWv",
+      "venue": "Raydium CP",
+      "pair": "SOL / 8vGr…",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "Q2sPHPdUWFMg7M7wwrQKLrn619cAucfRsmhVJffodSp",
+      "venue": "Raydium CP",
+      "pair": "SOL / Dz9m…",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "AMUFUwfrmBunwF1rYcMxSZc9MhDcEtzRL4uqYb5UBmNe",
+      "venue": "Raydium CP",
+      "pair": "5XZw… / USDC",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "gyYigqG8vdEMkDNTTVL6at2msbHdTDWyb6bccyR238U",
+      "venue": "Raydium CP",
+      "pair": "3ZLe… / USDC",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "6znWCAJkcnikZH77RLcw5G28sKwJZrSWaAcnKwX6ZEEy",
+      "venue": "Raydium CP",
+      "pair": "SOL / GwKK…",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "BCdZ9d2Jbsy2qLMRP2uGCKnnjQuWDL2hxndwvChtoC5K",
+      "venue": "Raydium CP",
+      "pair": "Cash… / USDC",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "2xK2oF3DZ7dJJ7zADxxV83gAAGGdXsxYGeWw4WDwTTmn",
+      "venue": "Raydium CP",
+      "pair": "SOL / FhwV…",
       "hiddenKind": "none",
       "hiddenBps": 0,
       "hasHidden": false
