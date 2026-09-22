@@ -14,7 +14,7 @@
 **Name:** sol-exact-quote
 **Repository:** https://github.com/faduuuu1/sol-exact-quote
 **License:** Apache-2.0. The library holds no funds, deploys no program, and has no token.
-**Applicant:** Fahad Ullah · @faduuuu1 · contact email in the application form · Pakistan
+**Applicant:** Fahad Ullah · GitHub @faduuuu1 · X @fadu01 · contact email in the application form · Pakistan
 
 **One line:** an open-source library that returns the exact output of a swap on seven Solana DEX venues from raw account
 bytes, verified against mainnet simulation, and refuses rather than approximates.
