@@ -92,10 +92,10 @@ All effort is costed at $35/hour.
 | 3 | **C3: Upgrade watch** | A weekly mainnet re-verification runs, an injected mismatch opens an issue automatically, and a public status page is live | 2 weeks (51 h) | $1,800 |
 | 4 | **C4a: Additional venue #1**, chosen by volume share with the Foundation | Exact on unchanged state in `verify.mjs`; fixtures in CI | 2 weeks (60 h) | $2,100 |
 | 5 | **C4b: Additional venue #2** | The same bar | 2 weeks (60 h) | $2,100 |
-| 6–11 | **Maintenance, months 1–6**, one milestone per month at $250 | Issues triaged, bugs fixed, upgrade-watch mismatches fixed within 7 days, releases tagged | 6 months | $1,500 |
+| 6–11 | **Maintenance, months 1–6**, one milestone per month at $400 | Issues triaged, bugs fixed, upgrade-watch mismatches fixed within 7 days, releases tagged | 6 months | $2,400 |
 | 12 | **A1: Integrations**: 2 independent public projects depending on the library | npm and crates.io reverse dependencies plus the GitHub dependency graph; public list in the README | grant period | $500 |
 | 13 | **A2: Downloads**: 300 in one calendar month, npm and crates.io combined | Public npm and crates.io download APIs; monthly figures published in the repo | grant period | $500 |
-| | **Total** | | | **$19,900** |
+| | **Total** | | | **$20,800** |
 
 **How adoption will be driven:**
 - Integration guides and runnable examples: wallet minimum-out, router pricing, and a service fed by gRPC.
