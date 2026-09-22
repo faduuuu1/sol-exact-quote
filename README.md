@@ -115,6 +115,18 @@ const { ix } = await buildSwapIx(conn, q, pool, inputMint, amountIn, owner, minO
 
 `minOut` defaults to `0`, which is right only for simulation. Set it before sending anything.
 
+## Hidden-fee scanner
+
+`site/` is a small static page that shows which pools charge a fee a naive quote misses, and by how much. It has no
+server and no dependencies: a Node scan writes `site/data.json`, and the page reads it.
+
+```bash
+RPC_URL=https://your-rpc node tools/fee-scan.mjs        # scans site/pools.txt -> site/data.json
+```
+
+Each pool is priced twice from the same state, once with the hidden fee and once without; the gap is the overstatement
+a base-rate quote would make. Serve `site/` as a static site (GitHub Pages, Netlify, Vercel) to host it for free.
+
 ## Verify it yourself
 
 ```bash

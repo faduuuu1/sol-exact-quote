@@ -1,0 +1,176 @@
+{
+  "generatedAt": "2026-09-22T01:11:26.734Z",
+  "scanned": 23,
+  "priced": 21,
+  "withHidden": 3,
+  "rows": [
+    {
+      "pool": "nEnhtdXrHocxDQnmfTWgaLodJP8jxFbY6958iv28GzV",
+      "venue": "Raydium CP",
+      "pair": "SOL / AqoP…",
+      "hiddenKind": "creator fee",
+      "hiddenBps": 100.25,
+      "hasHidden": true
+    },
+    {
+      "pool": "GhVFgbipdBgPK3DepE2P5H88dQN6EY8NYppWkg43rHbi",
+      "venue": "Whirlpool",
+      "pair": "SOL / Ai66…",
+      "hiddenKind": "adaptive fee",
+      "hiddenBps": 18.57,
+      "hasHidden": true
+    },
+    {
+      "pool": "tqeNC7ANhBfJWqyLQjoFvJXrEHiknGyr5tBGV4aSs6C",
+      "venue": "Raydium CLMM",
+      "pair": "SOL / 6GmA…",
+      "hiddenKind": "dynamic fee",
+      "hiddenBps": 0.15,
+      "hasHidden": true
+    },
+    {
+      "pool": "8sLbNZoA1cfnvMJLPfp98ZLAnFSYCFApfJKMbiXNLwxj",
+      "venue": "Raydium CLMM",
+      "pair": "SOL / USDC",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "EZVkeboWeXygtq8LMyENHyXdF5wpYrtExRNH9UwB1qYw",
+      "venue": "Raydium CLMM",
+      "pair": "JUPy… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "GtKKKs3yaPdHbQd2aZS4SfWhy8zQ988BJGnKNndLxYsN",
+      "venue": "Raydium CLMM",
+      "pair": "SOL / DezX…",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "Czfq3xZZDmsdGdUyrNLtRhGc47cXcZtLG4crryfu44zE",
+      "venue": "Whirlpool",
+      "pair": "SOL / USDC",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "5qrvgpvr55Eo7c5bBcwopdiQ6TpvceiRm42yjHTbtDvc",
+      "venue": "Whirlpool",
+      "pair": "SOL / hnty…",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "CSP4RmB6kBHkKGkyTnzt9zYYXDA8SbZ5Do5WfZcjqjE4",
+      "venue": "Whirlpool",
+      "pair": "SOL / hnty…",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "75fyBU93H5z5S5nec5huFhHYCtEGHkD9JBT8SYmBLyoQ",
+      "venue": "Raydium CP",
+      "pair": "SOL / WENW…",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "G8kgi7aUpeX8EVR8VMkrth9SKEv5BietWC33UjAiiMGh",
+      "venue": "Raydium CP",
+      "pair": "SOL / ApZu…",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "CgqwPLSFfht89pF5RSKGUUMFj5zRxoUt4861w2SkXaqY",
+      "venue": "Meteora DLMM",
+      "pair": "SOL / USDC",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "AcQPrTHx3ggWau1yU1fe5mQ89HeqPTsEoWC7ejL67wfd",
+      "venue": "Meteora DLMM",
+      "pair": "USDC / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "2f5QQnNBATNsE7mAW94dpxXeeBcihseJbawQ2KXen3rQ",
+      "venue": "Meteora DLMM",
+      "pair": "PerP… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "8Pm2kZpnxD3hoMmt4bjStX2Pw2Z9abpbHzZxMPqxPmie",
+      "venue": "Meteora DAMM v2",
+      "pair": "SOL / USDC",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "84uf4YpzybB4vm8RsermBFqjGxThAETpyMbp5HvkVRJQ",
+      "venue": "Meteora DAMM v2",
+      "pair": "PerP… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "KKyUyWncRfakBZh2M318BFfdR6332WWu1NePd9amQtj",
+      "venue": "Meteora DAMM v2",
+      "pair": "SV15… / USDC",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "91axdGmMoqQQg2MPUXKxT3bdqX4p2RMLXqZSQgXn2JpM",
+      "venue": "Raydium v4",
+      "pair": "hnty… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "CD5HDt23sjGud5VTWsv51BMPey2Qf9qH5cyswWmjBDdq",
+      "venue": "Pump.fun Amm",
+      "pair": "zj1j… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "AFaYrFH7hUYnkv5mbvbnRHwX29M9JzUL3ySGtQz69AUv",
+      "venue": "Pump.fun Amm",
+      "pair": "H74C… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    },
+    {
+      "pool": "CwqkkPwKcTXAr4xYw8FKykBYY6x6iaJKrjJdNShiQp8A",
+      "venue": "Pump.fun Amm",
+      "pair": "EpXt… / SOL",
+      "hiddenKind": "none",
+      "hiddenBps": 0,
+      "hasHidden": false
+    }
+  ]
+}

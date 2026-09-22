@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Solana hidden-fee scanner · sol-exact-quote</title>
+<meta name="description" content="Which Solana DEX pools charge a fee a naive quote misses, and by how much. Measured with sol-exact-quote against on-chain state." />
+<style>
+  :root {
+    --bg: #ffffff; --card: #f7f6f3; --ink: #1a1a19; --muted: #6b6a66; --line: #e4e2db;
+    --accent: #4b2e83; --warn-bg: #faeeda; --warn-ink: #633806; --ok-ink: #0f6e56;
+    --radius: 10px; --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    --sans: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1a1a19; --card: #242422; --ink: #f0efec; --muted: #a3a29a; --line: #33322f;
+      --accent: #b3a7e6; --warn-bg: #3a2c12; --warn-ink: #f0c579; --ok-ink: #5dcaa5; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans);
+    line-height: 1.6; -webkit-text-size-adjust: 100%; }
+  .wrap { max-width: 940px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 26px; font-weight: 600; margin: 0 0 6px; }
+  .sub { color: var(--muted); margin: 0 0 4px; font-size: 15px; }
+  .meta { color: var(--muted); font-size: 13px; margin: 0 0 24px; }
+  a { color: var(--accent); }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 0 0 28px; }
+  .card { background: var(--card); border-radius: var(--radius); padding: 14px 16px; }
+  .card .n { font-size: 28px; font-weight: 600; line-height: 1.1; }
+  .card .l { color: var(--muted); font-size: 13px; margin-top: 2px; }
+  .controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 0 0 14px; }
+  input[type=search], select { font: inherit; padding: 8px 10px; border: 1px solid var(--line);
+    border-radius: var(--radius); background: var(--bg); color: var(--ink); }
+  input[type=search] { flex: 1; min-width: 160px; }
+  label.chk { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 14px; }
+  .tablewrap { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  th { color: var(--muted); font-weight: 500; cursor: pointer; user-select: none; position: sticky; top: 0; background: var(--bg); }
+  th[aria-sort] { color: var(--ink); }
+  tr:last-child td { border-bottom: 0; }
+  td.pair { font-weight: 500; }
+  td.venue { color: var(--muted); }
+  .pill { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 12px; }
+  .pill.warn { background: var(--warn-bg); color: var(--warn-ink); }
+  .pill.none { color: var(--muted); border: 1px solid var(--line); }
+  td.bps { font-family: var(--mono); text-align: right; }
+  td.bps.warn { color: var(--warn-ink); font-weight: 600; }
+  td.bps.zero { color: var(--muted); }
+  td.addr a { font-family: var(--mono); font-size: 12px; text-decoration: none; color: var(--muted); }
+  td.addr a:hover { color: var(--accent); text-decoration: underline; }
+  footer { color: var(--muted); font-size: 13px; margin-top: 28px; line-height: 1.7; }
+  .empty { padding: 28px; text-align: center; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Solana hidden-fee scanner</h1>
+  <p class="sub">Which DEX pools charge a fee a naive quote misses &mdash; and by how much, in basis points.</p>
+  <p class="meta" id="meta">Loading&hellip;</p>
+
+  <div class="cards" id="cards"></div>
+
+  <div class="controls">
+    <input type="search" id="q" placeholder="Filter by pair, venue or address" aria-label="Filter" />
+    <select id="venue" aria-label="Venue"><option value="">All venues</option></select>
+    <label class="chk"><input type="checkbox" id="only" /> Only hidden fees</label>
+  </div>
+
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr>
+          <th data-k="pair">Pair</th>
+          <th data-k="venue">Venue</th>
+          <th data-k="hiddenKind">Hidden fee</th>
+          <th data-k="hiddenBps" style="text-align:right">A naive quote is off by</th>
+          <th data-k="pool">Pool</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </div>
+  <div class="empty" id="empty" hidden>No pools match.</div>
+
+  <footer>
+    <p>Each pool is priced twice from the same on-chain state: once with the full fee, once with the hidden
+    component switched off. The gap is what a base-rate quote overstates the output by. Measured with
+    <a href="https://github.com/faduuuu1/sol-exact-quote">sol-exact-quote</a>; nothing is traded.</p>
+    <p>Not financial advice. A pool can change at any block; re-run the scan for current numbers.</p>
+  </footer>
+</div>
+
+<script>
+  var EXPLORER = 'https://solscan.io/account/';
+  var state = { rows: [], sortK: 'hiddenBps', dir: -1 };
+
+  function fmtBps(v) { if (!v) return '0.00'; return (v > 0 ? '−' : '+') + Math.abs(v).toFixed(2); }
+  function short(a) { return a.slice(0, 4) + '…' + a.slice(-4); }
+
+  function render() {
+    var q = document.getElementById('q').value.trim().toLowerCase();
+    var venue = document.getElementById('venue').value;
+    var only = document.getElementById('only').checked;
+    var rows = state.rows.filter(function (r) {
+      if (venue && r.venue !== venue) return false;
+      if (only && !r.hasHidden) return false;
+      if (q && (r.pair + ' ' + r.venue + ' ' + r.pool).toLowerCase().indexOf(q) === -1) return false;
+      return true;
+    });
+    rows.sort(function (a, b) {
+      var x = a[state.sortK], y = b[state.sortK];
+      if (state.sortK === 'hiddenBps') { x = Math.abs(x); y = Math.abs(y); }
+      if (typeof x === 'string') { x = x.toLowerCase(); y = y.toLowerCase(); }
+      return x < y ? -state.dir : x > y ? state.dir : 0;
+    });
+    var tb = document.getElementById('rows');
+    tb.innerHTML = '';
+    rows.forEach(function (r) {
+      var tr = document.createElement('tr');
+      var pill = r.hasHidden ? '<span class="pill warn">' + r.hiddenKind + '</span>'
+        : '<span class="pill none">none</span>';
+      var bpsCls = 'bps ' + (r.hasHidden ? 'warn' : 'zero');
+      tr.innerHTML =
+        '<td class="pair"></td>' +
+        '<td class="venue"></td>' +
+        '<td>' + pill + '</td>' +
+        '<td class="' + bpsCls + '">' + (r.hasHidden ? fmtBps(r.hiddenBps) + ' bps' : '—') + '</td>' +
+        '<td class="addr"><a href="' + EXPLORER + r.pool + '" target="_blank" rel="noopener">' + short(r.pool) + '</a></td>';
+      tr.children[0].textContent = r.pair;
+      tr.children[1].textContent = r.venue;
+      tb.appendChild(tr);
+    });
+    document.getElementById('empty').hidden = rows.length > 0;
+    document.querySelectorAll('th').forEach(function (th) {
+      if (th.dataset.k === state.sortK) th.setAttribute('aria-sort', state.dir === 1 ? 'ascending' : 'descending');
+      else th.removeAttribute('aria-sort');
+    });
+  }
+
+  document.querySelectorAll('th').forEach(function (th) {
+    th.addEventListener('click', function () {
+      var k = th.dataset.k;
+      if (state.sortK === k) state.dir *= -1;
+      else { state.sortK = k; state.dir = (k === 'hiddenBps') ? -1 : 1; }
+      render();
+    });
+  });
+  ['q', 'venue'].forEach(function (id) { document.getElementById(id).addEventListener('input', render); });
+  document.getElementById('only').addEventListener('change', render);
+
+  fetch('./data.json').then(function (r) { return r.json(); }).then(function (d) {
+    state.rows = d.rows || [];
+    var when = d.generatedAt ? new Date(d.generatedAt).toUTCString() : 'unknown';
+    document.getElementById('meta').textContent = 'Scanned ' + when + ' · ' + (d.priced || 0) + ' pools priced';
+    var maxHidden = state.rows.reduce(function (m, r) { return r.hasHidden ? Math.max(m, Math.abs(r.hiddenBps)) : m; }, 0);
+    var cards = [
+      [d.priced || 0, 'pools priced'],
+      [d.withHidden || 0, 'charge a hidden fee'],
+      [maxHidden ? '−' + maxHidden.toFixed(1) : '0', 'worst miss (bps)'],
+      [(new Set(state.rows.map(function (r) { return r.venue; }))).size, 'venues covered'],
+    ];
+    document.getElementById('cards').innerHTML = cards.map(function (c) {
+      return '<div class="card"><div class="n">' + c[0] + '</div><div class="l">' + c[1] + '</div></div>';
+    }).join('');
+    var vs = Array.from(new Set(state.rows.map(function (r) { return r.venue; }))).sort();
+    var sel = document.getElementById('venue');
+    vs.forEach(function (v) { var o = document.createElement('option'); o.value = v; o.textContent = v; sel.appendChild(o); });
+    render();
+  }).catch(function () {
+    document.getElementById('meta').textContent = 'Could not load data.json. Run: RPC_URL=... node tools/fee-scan.mjs';
+  });
+</script>
+</body>
+</html>
