@@ -1,10 +1,10 @@
 # Grant application draft: sol-exact-quote
 
 > **For the applicant.** This is a draft to adapt to each program's form. It was written from the repository's own measurements.
-> The budget is a suggested starting point: about 640 hours at $35/hour, itemised below. You can change it.
+> Submitted as a Google Doc following the Foundation's Developer Tooling template. This file mirrors its milestones and budget.
 > Your contact email goes in each application form, not in this public file.
 > - Solana Foundation: apply at solana.org/grants-funding. Grants are milestone-based and require open source.
-> - Superteam Instagrants: through Superteam Earn, via Superteam Pakistan (apply here first).
+> - Superteam Earn has no Pakistan grant open (checked 2026-09-22), so the full request goes to the Solana Foundation.
 > - Orca's Whirlpools Builders Program, if a round is open.
 
 ---
@@ -78,24 +78,31 @@ split routed on it underdelivers, and a displayed price impact is too small.
 
 ## Milestones
 
-| # | Deliverable | Acceptance criteria | Duration | Budget |
+Structured to the Solana Foundation Developer Tooling template:
+- **(a)** One milestone per component, each paid on completion.
+- **(b)** Maintenance paid month by month.
+- **(c)** Adoption metrics paid pro rata, in 25% steps of each target.
+
+All effort is costed at $35/hour.
+
+| # | Milestone / Deliverable | Success criteria | Effort | Amount |
 |---|---|---|---|---|
-| M1 | **Rust crate** with the same seven venues | Every fixture in the corpus replays to the same integer in Rust as in JS, with the same refusal reason. Published on crates.io with docs. | 6 weeks (240 h) | $8,400 |
-| M2 | **Fixture corpus + CI** | At least 500 mainnet-recorded fixtures across all venues and both directions. GitHub Actions replays them offline on every commit, for JS and Rust. | 3 weeks (100 h) | $3,500 |
-| M3 | **Upgrade watch** | A scheduled job re-verifies a pool set against mainnet each week and opens an issue on any mismatch, which catches program upgrades and layout changes. A public status page shows the latest run. | 2 weeks (60 h) | $2,100 |
-| M4 | **Two more venues** | Chosen by volume share with the grant committee. Each meets the same bar: exact on unchanged state in `verify.mjs`, with fixtures in CI. | 4 weeks (140 h) | $4,900 |
-| M5 | **Maintenance, 12 months** | Mismatches from M3 fixed within 7 days of detection. Releases tagged. Issues answered. | 12 months (~8 h/month, 100 h) | $3,500 |
-| | **Total** | | ~15 weeks of build + 12 months of upkeep (640 h) | **$22,400** |
+| 1 | **C1: Rust crate**, all 7 venues (beta, crates.io 0.x) | Every fixture replays to the identical integer and identical refusal reason in Rust and JS | 6 weeks (240 h) | $8,400 |
+| 2 | **C2: Fixture corpus, CI and production releases** | At least 500 mainnet fixtures. CI replays them for JS and Rust on every commit. Negative controls fail. npm and crates.io 1.0 releases published | 3 weeks (86 h) | $3,000 |
+| 3 | **C3: Upgrade watch** | A weekly mainnet re-verification runs, an injected mismatch opens an issue automatically, and a public status page is live | 2 weeks (51 h) | $1,800 |
+| 4 | **C4a: Additional venue #1**, chosen by volume share with the Foundation | Exact on unchanged state in `verify.mjs`; fixtures in CI | 2 weeks (60 h) | $2,100 |
+| 5 | **C4b: Additional venue #2** | The same bar | 2 weeks (60 h) | $2,100 |
+| 6–17 | **Maintenance, months 1–12**, one milestone per month at $250 | Issues triaged, bugs fixed, upgrade-watch mismatches fixed within 7 days, releases tagged | 12 months | $3,000 |
+| 18 | **A1: Integrations**: 5 independent public projects depending on the library | npm and crates.io reverse dependencies plus the GitHub dependency graph; public list in the README | grant period | $1,000 |
+| 19 | **A2: Downloads**: 1,000 in one calendar month, npm and crates.io combined | Public npm and crates.io download APIs; monthly figures published in the repo | grant period | $1,000 |
+| | **Total** | | | **$22,400** |
 
-Payment requested per milestone, on delivery against its acceptance criteria.
+**How adoption will be driven:**
+- Integration guides and runnable examples: wallet minimum-out, router pricing, and a service fed by gRPC.
+- A technical write-up on the hidden fee components and how to verify a quoter.
+- Outreach, with pull requests, to open-source Solana projects that hand-roll swap quotes today.
 
-**How the budget was set.** Each milestone was estimated in hours from the work already done: the seven JS pricers and
-the verification tool exist, and a Rust port of two venues is under way. All hours are costed at one rate, $35/hour.
 The total is below the reported average of roughly $40,000 for Solana open-source public-good grants.
-
-**Split across programs, so no work is funded twice.** If Superteam Pakistan funds M2 and M3 as an Instagrant
-($5,600), the Solana Foundation request drops to M1, M4 and M5 ($16,800). Each application will state which
-milestones the other program already covers.
 
 ## Why this team
 
